@@ -18,6 +18,14 @@ Hello, I am Adam Lean - russian web-developer, musician and blogger.
 
 <img src="./svg/flstudio.svg" width="65" height="65"> <img src="./svg/reaper.svg" width="65" height="65">
 
+## Projects
+
+### exhum0 (Boom Bap / 90s Hip Hop)
+
+[YouTube](https://www.youtube.com/@exhum0)
+[Instagram](https://www.instagram.com/exhum0)
+[Soundcloud](https://soundcloud.com/exhum0)
+
 ## Contacts
 
 EMail: crashtheroutine@gmail.com
