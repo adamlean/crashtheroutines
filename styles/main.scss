@@ -1,0 +1,24 @@
+.achives_title,
+.skills_title,
+.works_title {
+  h, p {
+    width: 365px;
+    font-size: 36px;
+  }
+}
+
+.hero_title {
+  display: flex;
+  flex-direction: column-reverse;
+  padding-top: 206px;
+  padding-bottom: 25px;
+  gap: 9px;
+  h1 {
+    font-size: 48px;
+    line-height: 60px;
+    width: 700px;
+  }
+  p {
+    font-size: 16px;
+  }
+}

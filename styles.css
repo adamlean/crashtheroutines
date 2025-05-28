@@ -1,0 +1,248 @@
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 390px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav_menu {
+  display: none;
+  list-style: none;
+  padding: 0;
+}
+
+.nav_menu a {
+  color: #000;
+  text-decoration: none; /* по желанию — убирает подчёркивание */
+}
+
+.nav_menu a:hover {
+  text-decoration: underline; /* можно добавить эффект при наведении */
+}
+
+.nav_icon {
+  width: 30px;
+  height: 3px;
+  background-color: #333;
+  margin-right: 10px;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+h1 {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 60px;
+
+  color: #000000;
+}
+
+p {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+
+  color: #000000;
+}
+
+.subtitle p {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+
+  color: #000000;
+}
+
+.title_hero {
+  margin-top: 9px;
+  font-size: 48px;
+}
+
+.subtitle_hero p {
+  width: 245px;
+  height: 24px;
+
+  font-size: 16px;
+  line-height: 24px;
+
+  color: #000000;
+}
+
+.hero {
+  background-image: url(./asssets//img/Background.jpg);
+  max-width: 100%;
+  width: 1920px;
+  height: 800px;
+
+  padding: 0 auto;
+  display: flex;
+}
+
+.hero_title {
+  display: flex;
+  flex-direction: column-reverse;
+  padding-top: 206px;
+  padding-bottom: 25px;
+  gap: 9px;
+}
+
+.hero_title h1 {
+  font-size: 48px;
+  line-height: 60px;
+  width: 700px;
+}
+
+.hero_title p {
+  font-size: 16px;
+}
+
+.hero_btn_title {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 44px;
+}
+
+.portfolio_btn {
+  width: 135px;
+  height: 45px;
+
+  background: #FFA501;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
+}
+
+.about_btn_title {
+  background: none;
+  gap: 69px;
+}
+
+.about,
+.achieves {
+  margin: 120px 0 120px 0;
+}
+
+.about_head {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.about_cards {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.about_card {
+  width: 260px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.achives_title,
+.skills_title,
+.works_title {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-content: center;
+}
+
+.achives_title h1,
+.skills_title h1,
+.works_title h1 {
+  width: 365px;
+  font-size: 36px;
+}
+
+.achives_title p,
+.skills_title p,
+.works_title p {
+  font-size: 16px;
+}
+
+.achieves_card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: left;
+  margin-top: 45px;
+
+  width: 417px;
+}
+
+.achieves_card p {
+  font-size: 12px;
+}
+
+.achieves_card h1 {
+  font-size: 14px;
+}
+
+.achieves_card h2 {
+  font-size: 12px;
+}
+
+.education h1 {
+  font-size: 20px;
+}
+
+.achieves_cards {
+  display: flex;
+  flex-direction: row;
+}
+
+.skills_card {
+  max-width: 100%;
+  width: 270px;
+  border: 1px black;
+}
+
+.skills_card h1 {
+  font-size: 14px;
+}
+
+.skills_card p {
+  font-size: 12px;
+}
+
+.skills_cards {
+  display: flex;
+  flex-direction: row;
+  gap: 13px;
+
+  width: 100%;
+  max-width: 270px;
+}
