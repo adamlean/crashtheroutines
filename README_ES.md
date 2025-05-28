@@ -20,11 +20,7 @@ Hola, soy Adam Lean, desarrollador web, músico y bloguero ruso.
 
 ## Proyectos
 
-### exhum0 (Boom Bap / 90s Hip Hop)
-
-- [YouTube](https://www.youtube.com/@exhum0)
-- [Instagram](https://www.instagram.com/exhum0)
-- [Soundcloud](https://soundcloud.com/exhum0)
+- _[exhum0](https://github.com/crashtheroutines/exhum0) (Boom Bap / 90s Hip Hop)_
 
 ## Contactos
 
