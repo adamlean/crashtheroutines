@@ -18,6 +18,10 @@
 
 <img src="./svg/flstudio.svg" width="65" height="65"> <img src="./svg/reaper.svg" width="65" height="65">
 
+### Проекты
+
+- _[Злой Оператор](https://www.youtube.com/@ZloiOperator) (Работа, скам, треш вакансии и многое другое)_
+
 ## Связаться со мной
 
 EMail: crashtheroutine@gmail.com
