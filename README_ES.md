@@ -1,6 +1,6 @@
 # Crash The Routines
 
-[{#T}](README_RU.md) [English](README.md)
+[{#T}](./README_RU.md) [English](README.md)
 
 Hola, soy Adam Lean, desarrollador web, músico y bloguero ruso.
 
