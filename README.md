@@ -1,5 +1,7 @@
 # Crash The Routines
 
+[Русский](README_RU.md) [Spanish](README_ES.md)
+
 Hello, I am Adam Lean - russian web-developer, musician and blogger.
 
 ## Tools
