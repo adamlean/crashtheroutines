@@ -23,7 +23,7 @@
 <img src="./assets/svg/davinci.svg" width="65" height="65"> <img src="./assets/svg/figma-svgrepo-com.svg" width="65" height="65"> <img src="./assets/svg/adobe-premiere-svgrepo-com.svg" width="65" height="65">
 <img src="./assets/svg/adobe-photoshop-svgrepo-com.svg" width="65" height="65"> <img src="./assets/svg/adobe-illustrator-svgrepo-com.svg" width="65" height="65">
 
-### музыка
+### Музыка
 
 <img src="./assets/svg/flstudio.svg" width="65" height="65"> <img src="./assets/svg/reaper.svg" width="65" height="65">
 
