@@ -2,7 +2,8 @@
 
 [Русский](README_Ru.md) [Spanish](README_ES.md)
 
-Hello, I am Adam Lean - russian web-developer, musician and blogger.
+Hi, I'm Adam Lean, a web developer, musician and blogger.
+Crash The Routines - this is the name I use to make websites and apps.
 
 ## Tools
 
