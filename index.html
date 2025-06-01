@@ -111,7 +111,6 @@
         <div class="container">
           <div class="tools_title">
             <h1>Whats I use?</h1>
-            <p>Skills</p>
           </div>
 
           <div class="tool_cards">
@@ -199,36 +198,46 @@
         </div>
       </section>
 
-      <section class="contacts">
-        <div class="container">
+      <section class="contact">
+        <div class="contact_container">
+          <div class="contact_image">
+            <img src="./assets/img/hero_photo.jpg" alt="hero_photo" />
+          </div>
+
           <div class="contact_content">
-            <div class="hero_photo">
-              <img
-                src="./assets/img/hero_photo.jpg"
-                width="400px"
-                height="600px"
-                alt="hero_photo"
-              />
+            <span class="subtitle">Contacts</span>
+            <h2>Contact me</h2>
+
+            <p><strong>In any way convenient for you:</strong></p>
+            <div class="social_icons">
+              <a href="#"
+                ><img src="./assets/svg/youtube.svg" alt="YouTube"
+              /></a>
+              <a href="#"
+                ><img src="./assets/svg/Telegram.svg" alt="Telegram"
+              /></a>
+              <a href="#"
+                ><img src="./assets/svg/Instagram.svg" alt="Instagram"
+              /></a>
             </div>
-            <div class="contact_text">
-              <h2>Send me</h2>
-              <p>Contacts</p>
-              <p>In any way convenient for you:</p>
-              <p>Or send me you date and I contact with you:</p>
-            </div>
-            <form id="application-form">
-              <label for="insurance-type">Service:</label>
-              <select id="insurance-type" name="insurance-type">
-                <option value="auto">Landing Page</option>
-                <option value="health">Ecommerce</option>
-                <option value="property">Video Edit</option>
+
+            <p>
+              <strong
+                >Or leave your details and I will write to you myself:</strong
+              >
+            </p>
+            <form class="contact_form">
+              <div class="form_row">
+                <input type="text" placeholder="Your Name" />
+                <input type="email" placeholder="Your EMail" />
+              </div>
+
+              <select id="service_type" name="service_type" class="service">
+                <option value="landing">Landing Page</option>
+                <option value="videoedit">Video Edits</option>
               </select>
-              <label for="name">Name:</label>
-              <input type="text" id="name" name="name" required />
 
-              <label for="email">Email:</label>
-              <input type="email" id="email" name="email" required />
-
+              <textarea placeholder="Message"></textarea>
               <button type="submit">Submit</button>
             </form>
           </div>
