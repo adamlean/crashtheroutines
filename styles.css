@@ -184,71 +184,63 @@ a {
   margin: 120px 0 120px 0;
 }
 
+/* About */
+
+.about_content {
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
 .hero_photo img {
   width: 400px;
   height: auto;
   border-radius: 8px;
 }
 
-.section-tag {
-  color: #000;
+/* .about_text .tag {
+  background-color: red;
   padding: 6px 12px;
   border-radius: 20px;
   font-weight: bold;
   display: inline-block;
   margin-bottom: 10px;
-}
+} */
 
 .about_text h2 {
   font-size: 32px;
-  margin: 10px 0 20px;
+  margin: 0 0 20px;
 }
 
 .about_description {
-  color: #444;
   margin-bottom: 30px;
   line-height: 1.6;
-}
-
-.about_content {
-  display: flex;
-  gap: 40px;
-  align-items: flex-start;
-  flex-wrap: wrap;
+  color: #444;
 }
 
 .about_skills {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 20px;
-  flex-wrap: wrap;
 }
 
 .skill {
   display: flex;
   gap: 12px;
   align-items: flex-start;
-  max-width: 300px;
 }
 
-.skill .icon {
+.icon {
   background-color: red;
   padding: 10px;
   border-radius: 50%;
   font-size: 20px;
 }
 
-.skill h4 {
-  margin: 0;
-  font-size: 18px;
-}
+/* Tools */
 
-.skill p {
-  font-size: 14px;
-  margin-top: 5px;
-  color: #555;
-}
-
-.tools_cards {
+.tool_cards {
   display: flex;
   flex-direction: row;
   justify-content: center;
