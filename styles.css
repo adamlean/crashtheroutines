@@ -373,12 +373,6 @@ a {
   text-align: center;
 }
 
-.price_title {
-  font-size: 28px;
-  margin-bottom: 40px;
-  position: relative;
-}
-
 .price_title .highlight {
   position: relative;
   display: inline-block;
@@ -432,4 +426,11 @@ a {
   display: block;
   margin-top: 4px;
   font-size: 14px;
+}
+
+/* Works */
+
+.works_title {
+  display: flex;
+  margin-top: 25px;
 }
