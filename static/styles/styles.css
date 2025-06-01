@@ -129,7 +129,7 @@ a {
 }
 
 .hero {
-  background-image: url(./assets/img/background.jpg);
+  background-image: url(../assets/img/background.jpg);
   max-width: 100%;
   width: 1920px;
   height: 800px;
