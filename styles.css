@@ -184,97 +184,74 @@ a {
   margin: 120px 0 120px 0;
 }
 
-.about_head {
-  display: flex;
-  flex-direction: column-reverse;
+.hero_photo img {
+  width: 400px;
+  height: auto;
+  border-radius: 8px;
 }
 
-.about_cards {
+.section-tag {
+  color: #000;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-weight: bold;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.about_text h2 {
+  font-size: 32px;
+  margin: 10px 0 20px;
+}
+
+.about_description {
+  color: #444;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.about_content {
   display: flex;
-  flex-direction: row;
+  gap: 40px;
   align-items: flex-start;
+  flex-wrap: wrap;
 }
 
-.about_card {
-  width: 260px;
-
+.about_skills {
   display: flex;
-  flex-direction: column;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.skill {
+  display: flex;
+  gap: 12px;
   align-items: flex-start;
+  max-width: 300px;
 }
 
-.achives_title,
-.skills_title,
-.works_title {
-  display: flex;
-  flex-direction: column-reverse;
-  justify-content: center;
-  align-content: center;
-}
-
-.achives_title h1,
-.skills_title h1,
-.works_title h1 {
-  width: 365px;
-  font-size: 36px;
-}
-
-.achives_title p,
-.skills_title p,
-.works_title p {
-  font-size: 16px;
-}
-
-.achieves_card {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: left;
-  margin-top: 45px;
-
-  width: 417px;
-}
-
-.achieves_card p {
-  font-size: 12px;
-}
-
-.achieves_card h1 {
-  font-size: 14px;
-}
-
-.achieves_card h2 {
-  font-size: 12px;
-}
-
-.education h1 {
+.skill .icon {
+  background-color: red;
+  padding: 10px;
+  border-radius: 50%;
   font-size: 20px;
 }
 
-.achieves_cards {
-  display: flex;
-  flex-direction: row;
+.skill h4 {
+  margin: 0;
+  font-size: 18px;
 }
 
-.skills_card {
-  max-width: 100%;
-  width: 270px;
-  border: 1px black;
-}
-
-.skills_card h1 {
+.skill p {
   font-size: 14px;
+  margin-top: 5px;
+  color: #555;
 }
 
-.skills_card p {
-  font-size: 12px;
-}
-
-.skills_cards {
+.tools_cards {
   display: flex;
   flex-direction: row;
-  gap: 13px;
-
-  width: 100%;
-  max-width: 270px;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
 }
