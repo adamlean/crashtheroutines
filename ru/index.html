@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- {% load static %} -->
-<html lang="eng">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,8 +10,11 @@
     <title>Crash The Routines | Web Developer. Videoedit.</title>
 
     <!-- Подключение стилей -->
-    <link rel="stylesheet" href="../static/styles/styles.css" />
-    <link rel="stylesheet" href="{% static '../static/styles/styles.css' %}" />
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <!-- <link
+      rel="stylesheet"
+      href="{% static '../../static/styles/styles.css' %}"
+    /> -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
@@ -39,8 +42,8 @@
 
     <div class="social-bar">
       <div class="language-switch">
-        <a href="./ru/index.html" class="lang-btn">RU</a>
-        <a href="./es/index.html" class="lang-btn">ES</a>
+        <a href="../index.html" class="lang-btn">EN</a>
+        <a href="../es/index.html" class="lang-btn">ES</a>
       </div>
 
       <div class="icons">
@@ -67,13 +70,13 @@
         <div class="container">
           <div class="hero_title">
             <h1 class="title_hero">Crash The Routines</h1>
-            <p class="subtitle_hero">Web Development</p>
+            <p class="subtitle_hero">Веб разработка</p>
           </div>
           <div class="hero_btn">
             <button class="portfolio_btn">
-              <div class="hero_btn_title">Portfolio</div>
+              <div class="hero_btn_title">Портфолио</div>
             </button>
-            <a><div class="about_btn_title">About Me</div></a>
+            <a><div class="about_btn_title">Обо мне</div></a>
           </div>
         </div>
       </section>
@@ -84,26 +87,26 @@
           <div class="about_content">
             <div class="hero_photo">
               <img
-                src="../static/assets/img/hero_photo.jpg"
+                src="../assets/img/hero_photo.jpg"
                 width="400px"
                 height="600px"
                 alt="hero_photo"
               />
             </div>
             <div class="about_text">
-              <h2>My name is Adam Lean</h2>
-              <span class="tag">About Me</span>
+              <h2>Меня зовут Дмитрий Леан</h2>
+              <span class="tag">Обо мне</span>
 
               <p class="about_description">
-                Hi, my name is Adam Lean and I am a web developer. I also do
-                blogging and music. I build websites in Django and React. Since
-                I work alone, I can take on a small project. My services include
-                frontend, responsive and backend.
+                Привет, меня зовут Дмитрий Леан и я веб-разработчик. Также я
+                занимаюсь блогингом и музыкой. Я создаю сайты на Джанго и Реакт.
+                Так как я работаю один, я могу взяться за небольшой проект. Мои
+                услуги включают верстку, адаптив и бэкэнд.
               </p>
 
               <div class="about_skills">
                 <div class="skill">
-                  <img src="../static/assets/svg/webdev.svg" class="icon" />
+                  <img src="../assets/svg/webdev.svg" class="icon" />
                   <h4>Web Development</h4>
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -113,7 +116,7 @@
                 </div>
 
                 <div class="skill">
-                  <img src="../static/assets/svg/mobiledev.svg" class="icon" />
+                  <img src="../assets/svg/mobiledev.svg" class="icon" />
                   <h4>App Development</h4>
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -123,7 +126,7 @@
                 </div>
 
                 <div class="skill">
-                  <img src="../static/assets/svg/uxdesign.svg" class="icon" />
+                  <img src="../assets/svg/uxdesign.svg" class="icon" />
                   <h4>UI/UX Design</h4>
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -140,75 +143,72 @@
       <section class="tools">
         <div class="container">
           <div class="tools_title">
-            <h1>Technology</h1>
+            <h1>Технологии</h1>
           </div>
 
           <div class="tool_cards">
             <div class="tools_card">
-              <img src="../static/assets/svg/html5.svg" class="svg_icon" />
+              <img src="../assets/svg/html5.svg" class="svg_icon" />
             </div>
 
             <div class="tools_card">
-              <img src="../static/assets/svg/css3.svg" class="svg_icon" />
+              <img src="../assets/svg/css3.svg" class="svg_icon" />
             </div>
 
             <div class="tools_card">
-              <img src="../static/assets/svg/JS.svg" class="svg_icon" />
+              <img src="../assets/svg/JS.svg" class="svg_icon" />
             </div>
 
             <div class="tools_card">
-              <img src="../static/assets/svg/python.svg" class="svg_icon" />
+              <img src="../assets/svg/python.svg" class="svg_icon" />
             </div>
 
             <div class="tools_card">
               <img
-                src="../static/assets/svg/git-icon-logo-svgrepo-com.svg"
+                src="../assets/svg/git-icon-logo-svgrepo-com.svg"
                 class="svg_icon"
               />
             </div>
 
             <div class="tools_card">
-              <img src="../static/assets/svg/chatgpt.svg" class="svg_icon" />
+              <img src="../assets/svg/chatgpt.svg" class="svg_icon" />
+            </div>
+
+            <div class="tools_card">
+              <img src="../assets/svg/figma-svgrepo-com.svg" class="svg_icon" />
             </div>
 
             <div class="tools_card">
               <img
-                src="../static/assets/svg/figma-svgrepo-com.svg"
-                class="svg_icon"
-              />
-            </div>
-
-            <div class="tools_card">
-              <img
-                src="../static/assets/svg/adobe-illustrator-svgrepo-com.svg"
-                class="svg_icon"
-              />
-            </div>
-
-            <div class="tools_card">
-              <img
-                src="../static/assets/svg/adobe-photoshop-svgrepo-com.svg"
+                src="../assets/svg/adobe-illustrator-svgrepo-com.svg"
                 class="svg_icon"
               />
             </div>
 
             <div class="tools_card">
               <img
-                src="../static/assets/svg/adobe-premiere-svgrepo-com.svg"
+                src="../assets/svg/adobe-photoshop-svgrepo-com.svg"
                 class="svg_icon"
               />
             </div>
 
             <div class="tools_card">
               <img
-                src="../static/assets/svg/visual-studio-code-logo-svgrepo-com.svg"
+                src="../assets/svg/adobe-premiere-svgrepo-com.svg"
                 class="svg_icon"
               />
             </div>
 
             <div class="tools_card">
               <img
-                src="../static/assets/svg/sublime-text-svgrepo-com.svg"
+                src="../assets/svg/visual-studio-code-logo-svgrepo-com.svg"
+                class="svg_icon"
+              />
+            </div>
+
+            <div class="tools_card">
+              <img
+                src="../assets/svg/sublime-text-svgrepo-com.svg"
                 class="svg_icon"
               />
             </div>
@@ -219,14 +219,14 @@
       <section class="works">
         <div class="container">
           <div class="works_title">
-            <h2>My Works</h2>
+            <h2>Мои работы</h2>
           </div>
         </div>
       </section>
 
       <!-- <section class="price">
         <h2 class="price_title">
-          <span class="highlight">Price</span>
+          <span class="highlight">Прайслист</span>
         </h2>
 
         <div class="price_grid">
@@ -285,29 +285,30 @@
       <section class="contact">
         <div class="contact_container">
           <div class="contact_image">
-            <img src="../static/assets/img/hero_photo.jpg" alt="hero_photo" />
+            <img src="../assets/img/hero_photo.jpg" alt="hero_photo" />
           </div>
 
           <div class="contact_content">
-            <span class="subtitle">Contacts</span>
-            <h2>Contact me</h2>
+            <span class="subtitle">Контакты</span>
+            <h2>Свяжитесь со мной</h2>
 
-            <p><strong>In any way convenient for you:</strong></p>
+            <p><strong>Любым удобным для Вас способом:</strong></p>
             <div class="social_icons">
               <a href="#"
-                ><img src="../static/assets/svg/youtube.svg" alt="YouTube"
+                ><img src="../assets/svg/youtube.svg" alt="YouTube"
               /></a>
               <a href="#"
-                ><img src="../static/assets/svg/Telegram.svg" alt="Telegram"
+                ><img src="../assets/svg/Telegram.svg" alt="Telegram"
               /></a>
               <a href="#"
-                ><img src="../static/assets/svg/Instagram.svg" alt="Instagram"
+                ><img src="../assets/svg/Instagram.svg" alt="Instagram"
               /></a>
             </div>
 
             <p>
               <strong
-                >Or leave your details and I will write to you myself:</strong
+                >Или вы можете написать все детали, чтобы я с вами
+                связался:</strong
               >
             </p>
             <form class="contact_form">
@@ -318,11 +319,11 @@
 
               <select id="service_type" name="service_type" class="service">
                 <option value="landing">Landing Page</option>
-                <option value="videoedit">Video Edits</option>
+                <option value="videoedit">Видеомонтаж</option>
               </select>
 
               <textarea placeholder="Message"></textarea>
-              <button type="submit">Submit</button>
+              <button type="submit">Отправить</button>
             </form>
           </div>
         </div>
@@ -332,7 +333,7 @@
     <!-- Футер -->
     <footer class="footer">
       <div class="container">
-        <p>&copy; 2025, All Right Reserved</p>
+        <p>&copy; 2025, Все права защищены</p>
       </div>
     </footer>
 
