@@ -146,7 +146,8 @@ a {
   gap: 9px;
 }
 
-.hero_title h1 {
+.hero_title h2,
+.title h2 {
   font-size: 48px;
   line-height: 60px;
   width: 700px;
@@ -250,6 +251,16 @@ a {
   gap: 15px;
 }
 
+.tools_title,
+.works_title,
+.price_title {
+  display: flex;
+  justify-content: center;
+
+  font-size: 32px;
+  margin: 0 0 20px;
+}
+
 /* Contacts */
 
 .contact {
@@ -351,4 +362,74 @@ a {
 
 .contact_form button:hover {
   background-color: rgb(235, 186, 186);
+}
+
+/* Price */
+
+.price {
+  padding: 80px 0;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.price_title {
+  font-size: 28px;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.price_title .highlight {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.price_title .highlight::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: red;
+  margin: 5px auto 0;
+}
+
+.price_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  text-align: left;
+}
+
+.price_column {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.price_column li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 50%;
+  margin-top: 6px;
+  flex-shrink: 0;
+}
+
+.price_column strong {
+  font-weight: bold;
+}
+
+.price_column small {
+  color: #444;
+  display: block;
+  margin-top: 4px;
+  font-size: 14px;
 }
