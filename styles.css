@@ -186,7 +186,8 @@ a {
 
 /* About */
 
-.about_content {
+.about_content,
+.contact_content {
   display: grid;
   grid-template-columns: 400px 1fr;
   gap: 40px;
@@ -208,7 +209,8 @@ a {
   margin-bottom: 10px;
 } */
 
-.about_text h2 {
+.about_text h2,
+.contact_text h2 {
   font-size: 32px;
   margin: 0 0 20px;
 }
@@ -246,4 +248,10 @@ a {
   justify-content: center;
   align-items: center;
   gap: 15px;
+}
+
+/* Contacts */
+
+.contact_text p {
+  font-size: 16px;
 }
