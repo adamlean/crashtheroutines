@@ -85,16 +85,17 @@ p {
 .title_hero {
   margin-top: 9px;
   font-size: 48px;
+  color: white;
 }
 
-.subtitle_hero p {
+.subtitle_hero {
   width: 245px;
   height: 24px;
 
   font-size: 16px;
   line-height: 24px;
 
-  color: #000000;
+  color: white;
 }
 
 .hero {
@@ -131,13 +132,14 @@ p {
   align-items: flex-start;
   justify-content: center;
   gap: 44px;
+  color: white;
 }
 
 .portfolio_btn {
   width: 135px;
   height: 45px;
 
-  background: #FFA501;
+  background: red;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: none;
 }
