@@ -1,6 +1,6 @@
 # Crash The Routines
 
-[English](README.md) [Spanish](README_ES.md)
+[English](../README.md) [Spanish](README_ES.md)
 
 Привет, я - Дмитрий Лин, веб-разработчик, музыкант и блогер.
 Crash The Routines - под этим именем я делаю веб-сайты и приложения.
