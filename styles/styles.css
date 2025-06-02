@@ -499,3 +499,11 @@ a {
   background: red;
   color: black;
 }
+
+.lang-select {
+  border: 1px solid red;
+  color: red;
+  background: black;
+  margin-bottom: 20px;
+  padding: 5px;
+}
