@@ -1,6 +1,6 @@
 # Crash The Routines
 
-[Русский](README_Ru.md) [English](README.md)
+[Русский](README_Ru.md) [English](../README.md)
 
 Hola, soy Adam Lean, desarrollador web, músico y bloguero.
 Crash The Routines: este es el nombre que uso para crear sitios web y aplicaciones.
