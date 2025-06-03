@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- {% load static %} -->
-<html lang="esp">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,36 +9,27 @@
 
     <title>Crash The Routines | Web Developer. Videoedit.</title>
 
-    <!-- Подключение стилей -->
-    <link rel="stylesheet" href="../styles/styles.css" />
-    <!-- <link
-      rel="stylesheet"
-      href="{% static '../../static/styles/styles.css' %}"
-    /> -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
-
-    <!-- Подключение фавиконки (по желанию) -->
-    <!-- <link rel="icon" href="img/favicon.ico" type="image/x-icon" /> -->
+    <link rel="stylesheet" href="../styles/styles.css" />
   </head>
   <body>
-    <!-- Хедер 
     <header class="header">
       <div class="container">
         <nav class="nav">
           <div class="nav_icon"></div>
           <ul class="nav_menu">
-            <li><a href="#home">About</a></li>
-            <li><a href="#about">Skills</a></li>
-            <li><a href="#contact">Works</a></li>
-            <li><a href="#contact">Price</a></li>
-            <li><a href="#contact">Contacts</a></li>
+            <li><a href="#about">Sobre Mí</a></li>
+            <li><a href="#skills">Competencias</a></li>
+            <li><a href="#projects">Proyectos</a></li>
+            <li><a href="#price">Precio</a></li>
+            <li><a href="#contacts">Contactos</a></li>
           </ul>
         </nav>
       </div>
-    </header> -->
+    </header>
 
     <div class="social-bar">
       <div class="language-switch">
@@ -76,13 +67,13 @@
             <button class="portfolio_btn">
               <div class="hero_btn_title">Cartera</div>
             </button>
-            <a><div class="about_btn_title">Acerca de mí</div></a>
+            <a><div class="about_btn_title">Sobre Mí</div></a>
           </div>
         </div>
       </section>
 
       <!-- Добавляй нужные секции ниже -->
-      <section class="about">
+      <section class="about" id="about">
         <div class="container">
           <div class="about_content">
             <div class="hero_photo">
@@ -95,14 +86,13 @@
             </div>
             <div class="about_text">
               <h2>Mi nombre es Adam Lean</h2>
-              <span class="tag">Acerca de mí</span>
+              <span class="tag">Sobre mí</span>
 
               <p class="about_description">
-                Hola, me llamo Dmitry Lean y soy desarrollador web. También me
-                dedico a bloguear y a la música. Creo sitios web con Django y
-                React. Como trabajo solo, puedo encargarme de proyectos
-                pequeños. Mis servicios incluyen maquetación, desarrollo web
-                adaptativo y backend.
+                Hola, me llamo Adam Lean y soy desarrollador web. También hago
+                blogging y música. Creo sitios web en Django y React. Desde
+                trabajo solo, puedo encargarme de un proyecto pequeño. Mis
+                servicios incluyen maquetación, adaptabilidad y backend.
               </p>
 
               <div class="about_skills">
@@ -141,10 +131,10 @@
         </div>
       </section>
 
-      <section class="tools">
+      <section class="tools" id="skills">
         <div class="container">
           <div class="tools_title">
-            <h1>Tecnologías</h1>
+            <h1>Tecnología</h1>
           </div>
 
           <div class="tool_cards">
@@ -217,17 +207,15 @@
         </div>
       </section>
 
-      <section class="works">
+      <section id="projects" class="projects">
         <div class="container">
-          <div class="works_title">
-            <h2>Mis obras</h2>
-          </div>
+          <h2>Proyectos</h2>
         </div>
       </section>
 
-      <!-- <section class="price">
+      <section class="price" id="price">
         <h2 class="price_title">
-          <span class="highlight">Price</span>
+          <span class="highlight">Precio</span>
         </h2>
 
         <div class="price_grid">
@@ -235,7 +223,7 @@
             <li>
               <span class="dot"></span>
               <div>
-                <strong>Landing-page</strong> — от 8000 руб.<br />
+                <strong>Landing-page</strong> — от 5000 руб.<br />
                 <small
                   >Одностраничный сайт для презентации услуг/товаров/...</small
                 >
@@ -248,42 +236,31 @@
                 <small>Сайт для вашего бизнеса или компании</small>
               </div>
             </li>
-            <li>
-              <span class="dot"></span>
-              <div>
-                <strong>Интернет-магазин</strong> — от 30000 руб.<br />
-                <small>Инструмент для ваших продаж в сети</small>
-              </div>
-            </li>
           </ul>
 
           <ul class="price_column">
             <li>
               <span class="dot"></span>
               <div>
-                <strong>Web-приложение</strong> — от 28000 руб.<br />
-                <small>Приложение внутри браузера для лучшего комфорта</small>
+                <strong>Сайт на Tilda</strong> — от 5000 руб.<br />
+                <small
+                  >Сайт на конструкторе Тильда - быстрый цикл разработки, но со
+                  своими нюансами</small
+                >
               </div>
             </li>
             <li>
               <span class="dot"></span>
               <div>
-                <strong>Android/iOS Приложение</strong> — от 25000 руб.<br />
-                <small>Приложение для смартфона любой ОС</small>
-              </div>
-            </li>
-            <li>
-              <span class="dot"></span>
-              <div>
-                <strong>Дизайн</strong> — Индивидуально<br />
-                <small>Создам дизайн для вашего сайта/приложения…</small>
+                <strong>Сайт на Wordpress</strong> — от 8000 руб.<br />
+                <small>сайт на движке WP</small>
               </div>
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
-      <section class="contact">
+      <section class="contact" id="contacts">
         <div class="contact_container">
           <div class="contact_image">
             <img src="../assets/img/hero_photo.jpg" alt="hero_photo" />
@@ -291,9 +268,9 @@
 
           <div class="contact_content">
             <span class="subtitle">Contactos</span>
-            <h2>Contáctame</h2>
+            <h2>Contacte conmigo</h2>
 
-            <p><strong>De cualquier forma que te convenga:</strong></p>
+            <p><strong>De la forma que más le convenga:</strong></p>
             <div class="social_icons">
               <a href="#"
                 ><img src="../assets/svg/youtube.svg" alt="YouTube"
@@ -308,8 +285,8 @@
 
             <p>
               <strong
-                >O puedes escribirme todos los detalles para poder
-                contactarte:</strong
+                >O puedes escribir todos los detalles para que pueda contactar
+                con usted:</strong
               >
             </p>
             <form class="contact_form">
@@ -320,7 +297,7 @@
 
               <select id="service_type" name="service_type" class="service">
                 <option value="landing">Landing Page</option>
-                <option value="videoedit">Edición De Vídeo</option>
+                <option value="videoedit">Video Edits</option>
               </select>
 
               <textarea placeholder="Message"></textarea>
@@ -334,7 +311,7 @@
     <!-- Футер -->
     <footer class="footer">
       <div class="container">
-        <p>&copy; 2025, Reservados Todos los Derechos</p>
+        <p>&copy; 2025, Todos los derechos reservados</p>
       </div>
     </footer>
 

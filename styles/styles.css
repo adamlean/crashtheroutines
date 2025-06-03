@@ -214,6 +214,7 @@ a {
   grid-template-columns: 400px 1fr;
   gap: 40px;
   align-items: start;
+  margin-top: 25px;
 }
 
 .hero_photo img {
