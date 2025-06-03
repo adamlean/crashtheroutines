@@ -3,8 +3,13 @@
 @import "mobile.css";
 
 html, body {
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 0;
+  padding: 0;
   overflow-x: hidden;
+  background-color: rgb(0, 0, 0);
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
@@ -17,38 +22,67 @@ html, body {
   padding: 0;
 }
 
-.container {
-  width: 100%;
-  max-width: 1920px;
-  margin: 0 auto;
-  padding: 0 390px;
-}
-
-.nav {
+section {
+  min-height: 100vh;
   display: flex;
   align-items: center;
+  justify-content: center; 
 }
 
-.nav_menu {
-  display: none;
-  list-style: none;
-  padding: 0;
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
+.nav_title {
+  display: flex;
+  color: #ffffff;
 }
 
 .nav_menu a {
-  color: #000;
-  text-decoration: none; /* по желанию — убирает подчёркивание */
+  color: white;
+  text-decoration: none;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
 }
 
 .nav_menu a:hover {
-  text-decoration: underline; /* можно добавить эффект при наведении */
+  color: red;
+  text-decoration: underline;
 }
 
-.nav_icon {
-  width: 30px;
-  height: 3px;
-  background-color: #333;
-  margin-right: 10px;
+.nav_menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: flex-end;
+  gap: 15px;
+  margin-top: 50px;
+  list-style: none;
+  font-size: 24px;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: transparent;
+  z-index: 10;
 }
 
 h1 {
@@ -56,7 +90,7 @@ h1 {
   font-size: 36px;
   line-height: 60px;
 
-  color: #000000;
+  color: #ffffff;
 }
 
 p {
@@ -64,42 +98,20 @@ p {
   font-size: 14px;
   line-height: 21px;
 
-  color: #000000;
+  color: #ffffff;
 }
 
 a {
-  color: #000;
+  color: #ffffff;
   text-decoration: none;
 }
-
-/*.title {
-  width: 445px;
-  height: 60px;
-
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 60px;
-
-  color: #000000;
-}
-
-.subtitle {
-  width: 79px;
-  height: 24px;
-
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 24px;
-
-  color: #000000;
-}*/
 
 .subtitle p {
   font-weight: 700;
   font-size: 16px;
   line-height: 24px;
 
-  color: #000000;
+  color: #ffffff;
 }
 
 .title_hero {
@@ -128,14 +140,19 @@ a {
   align-items: center;
 }
 
+.svg_icon a:hover {
+  color: red;
+}
+
 .hero {
   background-image: url(../assets/img/background.jpg);
-  max-width: 100%;
-  width: 1920px;
-  height: 800px;
-
-  padding: 0 auto;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
 
 .hero_title {
@@ -163,6 +180,10 @@ a {
   align-items: flex-start;
   justify-content: center;
   gap: 44px;
+  color: white;
+}
+
+.hero-content {
   color: white;
 }
 
@@ -201,15 +222,6 @@ a {
   border-radius: 8px;
 }
 
-/* .about_text .tag {
-  background-color: red;
-  padding: 6px 12px;
-  border-radius: 20px;
-  font-weight: bold;
-  display: inline-block;
-  margin-bottom: 10px;
-} */
-
 .about_text h2,
 .contact_text h2 {
   font-size: 32px;
@@ -219,7 +231,7 @@ a {
 .about_description {
   margin-bottom: 30px;
   line-height: 1.6;
-  color: #444;
+  color: #ffffff;
 }
 
 .about_skills {
@@ -340,7 +352,7 @@ a {
   flex: 1;
   padding: 12px;
   font-size: 16px;
-  border: 1px solid #000;
+  border: 1px solid #f80000;
   border-radius: 2px;
 }
 
@@ -422,7 +434,7 @@ a {
 }
 
 .price_column small {
-  color: #444;
+  color: #ffffff;
   display: block;
   margin-top: 4px;
   font-size: 14px;
@@ -446,6 +458,7 @@ a {
   flex-direction: column;
   align-items: center;
   color: red;
+  z-index: 1;
 }
 
 .icons {
