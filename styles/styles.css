@@ -532,9 +532,8 @@ a {
 }
 
 .section-title {
-  text-align: center;
-  font-size: 28px;
-  margin-bottom: 40px;
+  display: flex;
+  margin-top: 5px;
 }
 
 .section-title span {
@@ -545,6 +544,7 @@ a {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 30px;
+  margin-top: 10px;
 }
 
 .project-card {
