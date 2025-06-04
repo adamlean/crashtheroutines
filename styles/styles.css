@@ -524,80 +524,91 @@ a {
 
 /* Projects */
 
-.albums-gallery {
-  flex: 1.5;
+.projects-section {
+  background-color: #0f0f2e;
+  padding: 60px 20px;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
 }
 
-.albums-gallery h2 {
-  font-size: 1.5rem;
-  margin-bottom: 20px;
-  margin-right: 50px;
-  display: flex;
-  justify-content: right;
+.section-title {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 40px;
 }
 
-.gallery-grid {
+.section-title span {
+  color: #c084fc;
+}
+
+.projects-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
 }
 
-.discography-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-}
-
-.album-card {
-  background: white;
-  justify-content: space-between;
+.project-card {
+  background-color: #1c1b3a;
   border-radius: 12px;
-  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
   overflow: hidden;
-  width: 310px;
-  height: 300px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
 }
 
-.album-card img {
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card img {
   width: 100%;
-  height: auto;
-  display: block;
+  object-fit: cover;
 }
 
-.album-card .info {
-  margin-left: 10px;
+.project-info {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.project-info h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.project-info p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #cbd5e1;
+}
+
+.project-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin-top: 10px;
 }
 
-.album-card .info p {
-  font-weight: bold;
-}
-
-.album-card .info span {
-  font-size: 0.9rem;
-  color: gray;
-}
-
-.album-card .actions {
-  margin-top: 16px;
-  margin-right: 25px;
+.tech-icons {
   display: flex;
-  justify-content: flex-end;
-  gap: 5px;
+  gap: 8px;
 }
 
-.album-card .actions a {
-  color: #333;
-  font-size: 1.2rem;
-  transition: color 0.2s;
+.tech-icons img {
+  width: 20px;
+  height: 20px;
 }
 
-.album-card .actions a:hover {
-  color: #007bff;
+.live-link {
+  font-size: 14px;
+  color: #c084fc;
+  text-decoration: none;
+  transition: opacity 0.2s;
 }
 
-.albums-section .container {
-  display: flex;
-  gap: 40px;
-  flex-wrap: wrap;
+.live-link:hover {
+  opacity: 0.8;
 }
