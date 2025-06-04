@@ -95,7 +95,7 @@ h1 {
 
 p {
   font-weight: 500;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 21px;
 
   color: #ffffff;
@@ -215,6 +215,7 @@ a {
   gap: 40px;
   align-items: start;
   margin-top: 25px;
+  font-size: 32px;
 }
 
 .hero_photo img {
@@ -227,18 +228,25 @@ a {
 .contact_text h2 {
   font-size: 32px;
   margin: 0 0 20px;
+  color: white;
+}
+
+.contact_text p {
+  font-size: 28px;
 }
 
 .about_description {
   margin-bottom: 30px;
   line-height: 1.6;
   color: #ffffff;
+  font-size: 28px;
 }
 
 .about_skills {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 2fr));
   gap: 20px;
+  font-size: 24px;
 }
 
 .skill {
