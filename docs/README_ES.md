@@ -25,7 +25,7 @@ Crash The Routines: este es el nombre que uso para crear sitios web y aplicacion
 
 ## Proyectos
 
-- _[exhum0](https://github.com/crashtheroutines/exhum0) (Boom Bap / 90s Hip Hop)_
+- _[exhum0](https://exhum0.netlify.app) (Boom Bap / 90s Hip Hop)_
 
 ## Contactos
 
