@@ -26,7 +26,7 @@ Crash The Routines - this is the name I use to make websites and apps.
 ## Projects
 
 - _[exhum0](https://exhum0.netlify.app) (Boom Bap / 90s Hip Hop)_
-- _[Crash The DevKit](https://github.com/crashtheroutines/crashtheroutines_devkits) (UI Kits Library)_
+- _[Crash The DevKit](https://github.com/crashtheroutines/crashthedevkits) (UI Kits Library)_
 
 ## Contacts
 
