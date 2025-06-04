@@ -26,6 +26,7 @@ Crash The Routines - под этим именем я делаю веб-сайт�
 ## Проекты
 
 - _[Злой Оператор](https://www.youtube.com/@ZloiOperator) (Работа, скам, треш вакансии и многое другое)_
+- _[Crash The DevKit](https://github.com/crashtheroutines/crashtheroutines_devkits) (UI Kits Library)_
 
 ## Связаться со мной
 
