@@ -25,6 +25,7 @@ Crash The Routines - под этим именем я делаю веб-сайт�
 
 ## Проекты
 
+- _[Crash The Routines](https://crashtheroutines.netlify.app/ru) (Портфолио)_
 - _[Злой Оператор](https://www.youtube.com/@ZloiOperator) (Работа, скам, треш вакансии и многое другое)_
 - _[Crash The DevKit](https://github.com/crashtheroutines/crashthedevkits) (UI Kits Library)_
 
