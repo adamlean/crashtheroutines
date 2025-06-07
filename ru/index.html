@@ -9,14 +9,14 @@
 
     <title>Crash The Routines | Веб разработка</title>
 
-    <script>
+    <script defer>
       (async function () {
         try {
           const res = await fetch("https://ipapi.co/json/");
           const data = await res.json();
           const country = data.country_code.toLowerCase();
 
-          const allowedCountries = ["ru", "by", "kz"];
+          const allowedCountries = ["ru"];
 
           if (!allowedCountries.includes(country)) {
             window.location.href = "../404.html";
