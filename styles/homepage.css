@@ -157,7 +157,7 @@ a {
 }
 
 .hero {
-  background-image: url(../assets/img/homepage.jpg);
+  background-image: url(../assets/img/homepage.webp);
   background-size: cover;
   background-position: center;
   min-height: 100vh;
