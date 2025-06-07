@@ -1,44 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Redirecting...</title>
-    <script>
-      (async function () {
-        const supportedLangs = ["en", "ru", "es"];
+<head>
+  <meta charset="UTF-8">
+  <title>Redirecting...</title>
+  <script>
+    (async function () {
+      const supportedLangs = ['en', 'ru', 'es'];
+      const savedLang = localStorage.getItem('lang');
+      const browserLang = navigator.language?.split('-')[0] || 'en';
 
-        // 1. Язык, выбранный вручную ранее
-        const savedLang = localStorage.getItem("lang");
+      let geoLang = 'en';
+      try {
+        const res = await fetch('https://ipapi.co/json/');
+        const data = await res.json();
+        const country = data.country_code.toLowerCase();
+        if (country === 'ru') geoLang = 'ru';
+        else if (country === 'es') geoLang = 'es';
+      } catch (e) {
+        // fallback = en
+      }
 
-        // 2. Язык браузера
-        const browserLang = navigator.language?.split("-")[0] || "en";
+      const lang =
+        supportedLangs.includes(savedLang) ? savedLang :
+        supportedLangs.includes(browserLang) ? browserLang :
+        geoLang;
 
-        // 3. Гео определение (по IP)
-        let countryLang = "en";
-        try {
-          const res = await fetch("https://ipapi.co/json/");
-          const data = await res.json();
-          const country = data.country_code.toLowerCase();
-
-          if (country === "ru") countryLang = "ru";
-          else if (country === "es") countryLang = "es";
-        } catch (e) {
-          // Если не сработал geo API — остаётся 'en'
-        }
-
-        // 4. Определяем финальный язык
-        const lang = supportedLangs.includes(savedLang)
-          ? savedLang
-          : supportedLangs.includes(browserLang)
-          ? browserLang
-          : countryLang;
-
-        // 5. Перенаправляем
-        window.location.replace(`/${lang}/`);
-      })();
-    </script>
-  </head>
-  <body>
-    <p>Redirecting based on your language and location...</p>
-  </body>
+      window.location.replace(`/${lang}/`);
+    })();
+  </script>
+</head>
+<body>
+  <p>Redirecting...</p>
+</body>
 </html>
