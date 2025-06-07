@@ -12,7 +12,7 @@
     <script>
       (async function () {
         try {
-          const res = await fetch("https://ipapi.co/json/");
+          const res = await fetch("https://api.country.is/");
           const data = await res.json();
           const country = data.country_code.toLowerCase(); // например, 'ru'
 
@@ -21,11 +21,11 @@
 
           if (!allowedCountries.includes(country)) {
             // Страна не подходит — редиректим на 404
-            window.location.href = "../404.html";
+            window.location.href = "./404.html";
           }
         } catch (e) {
           // если не удалось определить IP — тоже на 404
-          window.location.href = "../404.html";
+          window.location.href = "./404.html";
         }
       })();
     </script>
