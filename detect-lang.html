@@ -7,35 +7,33 @@
       (async function () {
         const supportedLangs = ["en", "ru", "es"];
 
-        // Проверка, не выбрал ли пользователь язык ранее
+        // 1. Язык, выбранный вручную ранее
         const savedLang = localStorage.getItem("lang");
 
-        // Язык браузера
+        // 2. Язык браузера
         const browserLang = navigator.language?.split("-")[0] || "en";
 
-        // Попытка определить страну через Netlify заголовки (если включена функция geolocation)
-        let country = null;
+        // 3. Гео определение (по IP)
+        let countryLang = "en";
         try {
-          const res = await fetch("https://ipapi.co/json/"); // Используем внешнюю API
+          const res = await fetch("https://ipapi.co/json/");
           const data = await res.json();
-          country = data.country_code.toLowerCase(); // ru, es, us и т.д.
+          const country = data.country_code.toLowerCase();
+
+          if (country === "ru") countryLang = "ru";
+          else if (country === "es") countryLang = "es";
         } catch (e) {
-          country = null;
+          // Если не сработал geo API — остаётся 'en'
         }
 
-        // Предполагаемый язык на основе гео
-        let geoLang = "en";
-        if (country === "ru") geoLang = "ru";
-        else if (country === "es") geoLang = "es";
-
-        // Финальный выбор языка
+        // 4. Определяем финальный язык
         const lang = supportedLangs.includes(savedLang)
           ? savedLang
           : supportedLangs.includes(browserLang)
           ? browserLang
-          : geoLang;
+          : countryLang;
 
-        // Редирект
+        // 5. Перенаправляем
         window.location.replace(`/${lang}/`);
       })();
     </script>
