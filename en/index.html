@@ -9,7 +9,7 @@
 
     <title>Crash The Routines | Web Developer. Videoedit.</title>
 
-    <script>
+    <script defer>
       (async function () {
         try {
           const res = await fetch("https://api.country.is/");
@@ -21,11 +21,11 @@
 
           if (!allowedCountries.includes(country)) {
             // Страна не подходит — редиректим на 404
-            window.location.href = "./404.html";
+            window.location.href = "/404.html";
           }
         } catch (e) {
           // если не удалось определить IP — тоже на 404
-          window.location.href = "./404.html";
+          window.location.href = "/404.html";
         }
       })();
     </script>
