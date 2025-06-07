@@ -9,6 +9,27 @@
 
     <title>Crash The Routines | Web Developer. Videoedit.</title>
 
+    <script>
+      (async function () {
+        try {
+          const res = await fetch("https://ipapi.co/json/");
+          const data = await res.json();
+          const country = data.country_code.toLowerCase(); // например, 'ru'
+
+          // Список разрешённых стран для английской версии
+          const allowedCountries = ["us", "gb", "ca", "au", "de"];
+
+          if (!allowedCountries.includes(country)) {
+            // Страна не подходит — редиректим на 404
+            window.location.href = "../404.html";
+          }
+        } catch (e) {
+          // если не удалось определить IP — тоже на 404
+          window.location.href = "../404.html";
+        }
+      })();
+    </script>
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
