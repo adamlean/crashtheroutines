@@ -1,1 +1,1 @@
-/detect-lang.html    302
+/    /detect-lang.html    302
