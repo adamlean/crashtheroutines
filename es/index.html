@@ -14,7 +14,7 @@
         try {
           const res = await fetch("https://api.country.is/");
           const data = await res.json();
-          const country = data.country_code.toLowerCase();
+          const country = data.country.toLowerCase();
 
           const allowedCountries = ["es", "mx", "ar", "co"];
 

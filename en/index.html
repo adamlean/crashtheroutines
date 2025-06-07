@@ -14,7 +14,7 @@
         try {
           const res = await fetch("https://api.country.is/");
           const data = await res.json();
-          const country = data.country_code.toLowerCase(); // например, 'ru'
+          const country = data.country.toLowerCase();
 
           // Список разрешённых стран для английской версии
           const allowedCountries = ["us", "gb", "ca", "au", "de"];
