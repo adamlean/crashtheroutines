@@ -32,3 +32,8 @@ Crash The Routines: este es el nombre que uso para crear sitios web y aplicacion
 ## Contactos
 
 EMail: crashtheroutine@gmail.com
+
+## Autor & Marca
+
+Este proyecto ha sido desarrollado por [CrashTheRoutines](https://crashtheroutines.netlify.app).  
+El código tiene licencia MIT, pero la marca y la identidad visual están protegidas y no pueden reutilizarse.
