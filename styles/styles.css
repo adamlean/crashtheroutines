@@ -663,10 +663,13 @@ a {
 }
 
 .footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, auto);
-  justify-content: center; 
-  gap: 380px;
+  justify-content: space-between;
+  text-align: center;
+  gap: 60px;
 }
 
 .footer-column h4 {
@@ -709,14 +712,17 @@ a {
 }
 
 .footer-bottom {
+  max-width: 1200px;
+  margin: 0 auto;
   border-top: 1px solid #222;
   padding-top: 20px;
   display: flex;
   flex-wrap: wrap;
-  gap: 150px;
-  justify-content: center;
+  justify-content: space-evenly;
+  text-align: center;
   font-size: 0.8rem;
   color: #777;
+  gap: 50px;
 }
 
 .footer-bottom a {
