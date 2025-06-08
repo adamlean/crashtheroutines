@@ -27,7 +27,7 @@ Crash The Routines - под этим именем я делаю веб-сайт�
 
 - _[Crash The Routines](https://crashtheroutines.netlify.app) (Portfolio)_
 - _[Crash The DevKit](https://github.com/crashtheroutines/crashthedevkits) (UI Kits Library)_
-- _[exhum0](https://exhum0.netlify.app) (Boom Bap / 90s Hip Hop)_
+- _[UltraREAList](https://exhum0.netlify.app) (Boom Bap / 90s Hip Hop)_
 - _[Злой Оператор](https://www.youtube.com/@ZloiOperator) (Работа, скам, треш вакансии и многое другое)_
 
 ## Связаться со мной
