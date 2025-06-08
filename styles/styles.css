@@ -666,7 +666,7 @@ a {
   display: grid;
   grid-template-columns: repeat(3, auto);
   justify-content: center; 
-  gap: 100px;
+  gap: 130px;
 }
 
 .footer-column h4 {
@@ -713,7 +713,7 @@ a {
   padding-top: 20px;
   display: flex;
   flex-wrap: wrap;
-  gap: 70px;
+  gap: 100px;
   justify-content: center;
   font-size: 0.8rem;
   color: #777;
