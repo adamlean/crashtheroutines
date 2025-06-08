@@ -666,7 +666,7 @@ a {
   display: grid;
   grid-template-columns: repeat(3, auto);
   justify-content: center; 
-  gap: 40px;
+  gap: 50px;
 }
 
 .footer-column h4 {
