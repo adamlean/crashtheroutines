@@ -7,6 +7,51 @@
     <meta name="description" content="Описание сайта" />
     <title>Portfolio</title>
 
+     <script defer>
+      (async function () {
+        try {
+          const res = await fetch("https://api.country.is/");
+          const data = await res.json();
+          const country = data.country.toLowerCase();
+
+          const allowedCountries = [
+            "us",
+            "ca",
+            "gb",
+            "au",
+            "nz",
+            "fr",
+            "de",
+            "it",
+            "es",
+            "pt",
+            "nl",
+            "be",
+            "ch",
+            "at",
+            "se",
+            "no",
+            "fi",
+            "dk",
+            "ie",
+            "lu",
+          ];
+
+          if (blockedCountries.includes(country)) {
+            window.location.href = "404.html";
+          }
+
+          if (!allowedCountries.includes(country)) {
+            // Страна не подходит — редиректим на 404
+            window.location.href = "404.html";
+          }
+        } catch (e) {
+          // если не удалось определить IP — тоже на 404
+          window.location.href = "404.html";
+        }
+      })();
+    </script>
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
