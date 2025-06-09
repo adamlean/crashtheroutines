@@ -597,6 +597,56 @@ a {
   opacity: 0.8;
 }
 
+/* Price */
+
+.services {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 60px 20px;
+  background-color: #1a192c;
+}
+
+.service {
+  background-color: #17198f;
+  padding: 30px;
+  max-width: 300px;
+  box-shadow: 0 0 0 1px #f30000;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.service h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.service p {
+  font-size: 14px;
+  color: #333;
+  flex-grow: 1;
+  margin-bottom: 20px;
+}
+
+.service button {
+  padding: 10px;
+  background: transparent;
+  border: 1px solid #000;
+  cursor: pointer;
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  transition: background 0.3s;
+}
+
+.service button:hover {
+  background: #000;
+  color: #fff;
+}
+
 /* Skills */
 
 .skills-section {
