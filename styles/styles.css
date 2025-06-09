@@ -374,7 +374,7 @@ a {
   width: fit-content;
   padding: 12px 24px;
   background-color: red;
-  color: black;
+  color: rgb(255, 255, 255);
   border: none;
   font-weight: bold;
   cursor: pointer;
