@@ -379,11 +379,11 @@ a {
   font-weight: bold;
   cursor: pointer;
   transition: 0.3s;
-  border-color: white;
 }
 
 .contact_form button:hover {
   background-color: rgb(0, 0, 0);
+  border-color: white;
 }
 
 /* Price */
