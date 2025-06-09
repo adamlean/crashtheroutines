@@ -371,14 +371,12 @@ a {
 }
 
 .contact_form button {
-  width: fit-content;
-  padding: 12px 24px;
-  background-color: rgb(255, 0, 0);
-  color: rgb(255, 255, 255);
   border: none;
-  font-weight: bold;
+  padding: 10px 20px;
+  background-color: transparent;
+  color: black;
   cursor: pointer;
-  transition: 0.3s;
+  transition: all 0.3s ease;
 }
 
 .contact_form button:hover {
