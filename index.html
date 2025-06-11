@@ -26,18 +26,10 @@
           // Если ошибка — перенаправим на английскую версию
           window.location.replace("/en/");
         }
-
-        localStorage.setItem("lang", lang);
-
-        const savedLang = localStorage.getItem("lang");
-        if (savedLang) {
-          window.location.replace(`/${savedLang}/`);
-          return;
-        }
       })();
     </script>
   </head>
   <body>
-    <p>Redirecting based on your location...</p>
+    <p>Redirecti...</p>
   </body>
 </html>
