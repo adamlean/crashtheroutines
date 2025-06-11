@@ -4,31 +4,23 @@
     <meta charset="UTF-8" />
     <title>Redirecting...</title>
     <script>
-      (async function () {
-        const supportedLangs = ["en", "ru", "es"];
-        const currentPath = window.location.pathname.split("/")[1];
-        if (supportedLangs.includes(currentPath)) return; // уже в нужной папке
+      (function () {
+        const supportedLangs = ["en", "ru", "fr"];
 
+        // Сначала проверяем, сохранял ли пользователь язык вручную
         const savedLang = localStorage.getItem("lang");
-        const browserLang = navigator.language?.split("-")[0] || "en";
 
-        let geoLang = "en";
-        try {
-          const res = await fetch("https://ipapi.co/json/");
-          const data = await res.json();
-          const country = data.country_code.toLowerCase();
-          if (country === "ru") geoLang = "ru";
-          else if (country === "es") geoLang = "es";
-        } catch (e) {
-          // fallback = en
-        }
+        // Берем язык из браузера, например "ru-RU"
+        const browserLang = navigator.language.split("-")[0]; // "ru"
 
+        // Определяем язык: приоритет сохранённый → браузерный → en
         const lang = supportedLangs.includes(savedLang)
           ? savedLang
           : supportedLangs.includes(browserLang)
           ? browserLang
-          : geoLang;
+          : "en";
 
+        // Перенаправляем на нужный язык
         window.location.replace(`/${lang}/`);
       })();
     </script>
