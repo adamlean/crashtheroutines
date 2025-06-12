@@ -5,26 +5,29 @@
     <title>Redirecting...</title>
     <script defer>
       (async function () {
+        const supportedLangs = ["en", "ru", "es"];
+        const savedLang = localStorage.getItem("lang");
+        const browserLang = navigator.language?.split("-")[0] || "en";
+
+        let geoLang = "en";
         try {
           const res = await fetch("https://ipapi.co/json/");
           const data = await res.json();
           const country = data.country_code.toLowerCase();
-
-          let lang = "ru"; // язык по умолчанию
-
-          const ruCountries = ["ru", "by", "kz", "kg", "ua", "uz", "tj"];
-          const esCountries = ["es", "mx", "ar", "cl", "co", "pe", "ve"];
-
-          if (ruCountries.includes(country)) {
-            lang = "ru";
-          } else if (esCountries.includes(country)) {
-            lang = "es";
-          }
-
-          window.location.replace(`/${lang}/`);
+          if (country === "ru") geoLang = "ru";
+          else if (country === "es") geoLang = "es";
         } catch (e) {
-          // Если ошибка — перенаправим на английскую версию
-          window.location.replace("/en/");
+          // fallback = en
+        }
+
+        const lang = supportedLangs.includes(savedLang)
+          ? savedLang
+          : supportedLangs.includes(browserLang)
+          ? browserLang
+          : geoLang;
+
+        if (!location.pathname.startsWith(`/${lang}/`)) {
+          window.location.replace(`/${lang}/`);
         }
       })();
     </script>
