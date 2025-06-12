@@ -3,9 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <title>Redirecting...</title>
-    <script defer>
+    <script>
       (async function () {
         const supportedLangs = ["en", "ru", "es"];
+        const currentPath = window.location.pathname.split("/")[1];
+        if (supportedLangs.includes(currentPath)) return; // уже в нужной папке
+
         const savedLang = localStorage.getItem("lang");
         const browserLang = navigator.language?.split("-")[0] || "en";
 
@@ -26,13 +29,11 @@
           ? browserLang
           : geoLang;
 
-        if (!location.pathname.startsWith(`/${lang}/`)) {
-          window.location.replace(`/${lang}/`);
-        }
+        window.location.replace(`/${lang}/`);
       })();
     </script>
   </head>
   <body>
-    <p>Redirecti...</p>
+    <p>Redirecting...</p>
   </body>
 </html>
