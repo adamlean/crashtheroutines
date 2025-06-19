@@ -19,17 +19,6 @@ Crash The Routines - под этим именем я делаю веб-сайт�
 <img src="../assets/svg/davinci.svg" width="65" height="65"> <img src="../assets/svg/figma-svgrepo-com.svg" width="65" height="65"> <img src="../assets/svg/adobe-premiere-svgrepo-com.svg" width="65" height="65">
 <img src="../assets/svg/adobe-photoshop-svgrepo-com.svg" width="65" height="65"> <img src="../assets/svg/adobe-illustrator-svgrepo-com.svg" width="65" height="65">
 
-### Музыка
-
-<img src="../assets/svg/flstudio.svg" width="65" height="65"> <img src="../assets/svg/reaper.svg" width="65" height="65">
-
-## Проекты
-
-- _[Crash The Routines](https://crashtheroutines.netlify.app) (Portfolio)_
-- _[Crash The DevKit](https://github.com/crashtheroutines/crashthedevkits) (UI Kits Library)_
-- _[UltraREAList](https://exhum0.netlify.app) (Boom Bap / 90s Hip Hop)_
-- _[Злой Оператор](https://www.youtube.com/@ZloiOperator) (Работа, скам, треш вакансии и многое другое)_
-
 ## Связаться со мной
 
 EMail: crashtheroutine@gmail.com
