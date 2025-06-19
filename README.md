@@ -23,12 +23,6 @@ Crash The Routines - this is the name I use to make websites and apps.
 
 <img src="./assets/svg/flstudio.svg" width="65" height="65"> <img src="./assets/svg/reaper.svg" width="65" height="65">
 
-## Projects
-
-- _[Crash The Routines](https://crashtheroutines.netlify.app) (Portfolio)_
-- _[Crash The DevKit](https://github.com/crashtheroutines/crashthedevkits) (UI Kits Library)_
-- _[exhum0](https://exhum0.netlify.app) (Boom Bap / 90s Hip Hop)_
-
 ## Contacts
 
 EMail: crashtheroutine@gmail.com
