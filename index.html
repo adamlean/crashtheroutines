@@ -14,6 +14,44 @@
 
     <title>Crash The Routines | Веб разработка</title>
 
+     <script>
+      (async function () {
+        const savedLang = localStorage.getItem("lang");
+        const urlLang = window.location.pathname.split("/")[1];
+        const supported = ["ru", "en"];
+
+        if (savedLang === "en" && urlLang !== "en") {
+          window.location.replace(window.location.origin + "/en/");
+          return;
+        }
+
+        if (savedLang && supported.includes(savedLang)) return;
+
+        try {
+          const res = await fetch("https://ipapi.co/json/");
+          const geo = await res.json();
+          const country = geo.country.toLowerCase();
+
+          const browserLang = navigator.language?.split("-")[0] || "ru";
+
+          const isRussianGeo = ["ru", "by", "kz", "ua", "uz", "kg"].includes(
+            country
+          );
+          const isRussianLang = browserLang === "ru";
+
+          if (!isRussianGeo && !isRussianLang) {
+            localStorage.setItem("lang", "en");
+            window.location.replace(window.location.origin + "/en/");
+          } else {
+            localStorage.setItem("lang", "ru");
+          }
+        } catch (e) {
+          // fallback: остаёмся на текущей странице
+          console.error("Geo/lang detection failed", e);
+        }
+      })();
+    </script>
+
     <!--<script defer src="../js/geo-detect-ru.js"></script>-->
 
     <link
