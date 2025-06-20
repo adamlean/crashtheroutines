@@ -1,35 +1,505 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Redirecting...</title>
-  <script defer>
-    (async function () {
-      const supportedLangs = ['en', 'ru', 'es'];
-      const savedLang = localStorage.getItem('lang');
-      const browserLang = navigator.language?.split('-')[0] || 'en';
+<!-- {% load static %} -->
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="Разработка веб-сайтов и приложений, автоматизация бизнеса. Создание сайтов на Tilda и CMS Wordpress."
+    />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://crashtheroutines.netlify.app/ru" />
 
-      let geoLang = 'en';
-      try {
-        const res = await fetch('https://ipapi.co/json/');
-        const data = await res.json();
-        const country = data.country_code.toLowerCase();
-        if (country === 'ru') geoLang = 'ru';
-        else if (country === 'es') geoLang = 'es';
-      } catch (e) {
-        // fallback = en
-      }
+    <title>Crash The Routines | Веб разработка</title>
 
-      const lang =
-        supportedLangs.includes(savedLang) ? savedLang :
-        supportedLangs.includes(browserLang) ? browserLang :
-        geoLang;
+    <!--<script defer src="../js/geo-detect-ru.js"></script>-->
 
-      window.location.replace(`/${lang}/`);
-    })();
-  </script>
-</head>
-<body>
-  <p>Redirecting...</p>
-</body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="nav">
+          <div class="nav_icon"></div>
+          <ul class="nav_menu">
+            <li><a href="#about">О нас</a></li>
+            <li><a href="#skills">Технологии</a></li>
+            <li><a href="#projects">Проекты</a></li>
+            <li><a href="#price">Услуги</a></li>
+            <li><a href="#contacts">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="social-bar">
+    <div class="language-switch">
+        <a href="./en/index.html" class="lang-btn">EN</a>
+        <a href="./es/index.html" class="lang-btn">ES</a>
+      </div>
+      <div class="icons">
+        <a href="https://www.youtube.com/@crashtheroutines" target="_blank"
+          ><i class="fab fa-youtube"></i
+        ></a>
+        <a href="https://www.instagram.com/crashtheroutines" target="_blank"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a href="./assets/svg/Instagram.svg" target="_blank"
+          ><i class="fab fa-telegram-plane"></i
+        ></a>
+        <a href="https://github.com/crashtheroutines" target="_blank"
+          ><i class="fab fa-github"></i
+        ></a>
+      </div>
+      <div class="label">Social</div>
+      <div class="line"></div>
+    </div>
+
+    <!-- Главный контент -->
+    <main>
+      <section id="hero" class="hero">
+        <div class="container">
+          <div class="hero_title">
+            <h1 class="title_hero">Crash The Routines</h1>
+            <p class="subtitle_hero">Веб разработка. Автоматизация.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Добавляй нужные секции ниже -->
+      <section class="about" id="about">
+        <div class="container">
+          <div class="about_content">
+            <div class="hero_photo">
+              <img
+                src="./assets/img/hero_photo.jpg"
+                width="400px"
+                height="600px"
+                alt="hero_photo"
+              />
+            </div>
+            <div class="about_text">
+              <h2>О нас</h2>
+              <!-- <span class="tag">Обо мне</span> -->
+
+              <p class="about_description">
+                Crash The Routines - студия веб-разработки, которая занимается разработкой веб-сайтов, приложений и автоматизацией бизнес процессов. 
+              </p>
+
+              <div class="about_skills">
+                <div class="skill">
+                  <img src="./assets/svg/webdev.svg" class="icon" />
+                  <h4>Верстка</h4>
+                  <p>Pixel Perfect верстка по макету из Figma</p>
+                </div>
+
+                <div class="skill">
+                  <img src="./assets/svg/mobiledev.svg" class="icon" />
+                  <h4>Веб разработка</h4>
+                  <p>
+                    Разработка веб-сайта с нуля, либо на Wordpress и Tilda. Из
+                    фреймворков используется React и Django.
+                  </p>
+                </div>
+
+                <div class="skill">
+                  <img src="./assets/svg/uxdesign.svg" class="icon" />
+                  <h4>Автоматизация</h4>
+                  <p>
+                    Разработка ботов, скриптов и парсеров на Python.
+                    Автоматизация не является для меня приоритетом, а лишь
+                    дополнением в вебу.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="skills-section" id="skills">
+        <h2 class="skills-title">ТЕХНОЛОГИИ</h2>
+
+        <div class="skills-category">
+          <h3>WEB:</h3>
+          <div class="skills-grid">
+            <div class="skill">
+              <img src="./assets/svg/html5.svg" /><span>HTML5</span>
+            </div>
+            <div class="skill">
+              <img src="./assets/svg/css3.svg" /><span>CSS3</span>
+            </div>
+            <div class="skill">
+              <img src="./assets/svg/JS.svg" /><span>JavaScript</span>
+            </div>
+            <div class="skill">
+              <img src="./assets/svg/python.svg" /><span>Python</span>
+            </div>
+            <div class="skill">
+              <img src="./assets/svg/git-icon-logo-svgrepo-com.svg" /><span
+                >Git</span
+              >
+            </div>
+            <div class="skill">
+              <img src="./assets/svg/chatgpt.svg" /><span>Chat GPT</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills-category">
+          <h3>CMS:</h3>
+          <div class="skills-grid">
+            <div class="skill">
+              <img src="./assets/svg/wordpress.svg" /><span>Wordpress</span>
+            </div>
+            <div class="skill">
+              <img src="./assets/svg/tilda.svg" /><span>Tilda</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills-category">
+          <h3>DESIGN:</h3>
+          <div class="skills-grid">
+            <div class="skill">
+              <img src="./assets/svg/figma-svgrepo-com.svg" /><span
+                >Figma</span
+              >
+            </div>
+            <div class="skill">
+              <img src="./assets/svg/adobe-photoshop-svgrepo-com.svg" /><span
+                >Adobe Photoshop</span
+              >
+            </div>
+            <div class="skill">
+              <img src="./assets/svg/adobe-illustrator-svgrepo-com.svg" /><span
+                >Adobe illustrator</span
+              >
+            </div>
+            <div class="skill">
+              <img src="./assets/svg/adobe-premiere-svgrepo-com.svg" /><span
+                >Adobe Premiere</span
+              >
+            </div>
+            <div class="skill">
+              <img src="./assets/svg/davinci.svg" /><span
+                >Da Vinci Resolve</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+       <section class="projects-section" id="projects">
+        <div class="container">
+          <div class="section-title">
+            <h2>
+              Другие
+              <a href="./portfolio.html"><span>проекты</span></a>
+            </h2>
+          </div>
+
+          <div class="projects-grid">
+            <div class="project-card">
+              <img
+                src="./assets/img/wpru.jpg"
+                alt="Project image"
+              />
+              <div class="project-info">
+                <h3>Wishbone+Partners</h3>
+                <p>Сайт архитектурной компании</p>
+                <div class="project-meta">
+                  <div class="tech-icons">
+                    <img src="./assets/svg/html5.svg" alt="HTML" />
+                    <img src="./assets/svg/css3.svg" alt="CSS" />
+                    <img src="./assets/svg/JS.svg" alt="JS" />
+                  </div>
+                  <a
+                    href="https://crashtheroutines.github.io/wishboneportfolio"
+                    class="live-link"
+                    target="_blank"
+                    >Перейти на сайт →</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <img src="./assets/img/scripttucallru.jpg" alt="Project image" />
+              <div class="project-info">
+                <h3>Script2Call</h3>
+                <p>Менеджер скриптов для операторов колл центров</p>
+                <div class="project-meta">
+                  <div class="tech-icons">
+                    <img src="./assets/svg/JS.svg" alt="JS" />
+                  </div>
+                  <a
+                    href="https://crashthedev.github.io/script2call"
+                    class="live-link"
+                    target="_blank"
+                    >Перейти на сайт →</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <img src="./assets/img/carservices.jpg" alt="Project image" />
+              <div class="project-info">
+                <h3>Автомастерская</h3>
+                <p>Веб-сайт автосервиса</p>
+                <div class="project-meta">
+                  <div class="tech-icons">
+                    <img src="./assets/svg/html5.svg" alt="HTML" />
+                    <img src="./assets/svg/css3.svg" alt="CSS" />
+                  </div>
+                  <a
+                    href="https://crashtheroutines.github.io/carservice_landing"
+                    class="live-link"
+                    target="_blank"
+                    >Перейти на сайт →</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <img src="./assets/img/musicru.jpg" alt="Project image" />
+              <div class="project-info">
+                <h3>Producer</h3>
+                <p>Сайт для битмейкера</p>
+                <div class="project-meta">
+                  <div class="tech-icons">
+                    <img src="./assets/svg/html5.svg" alt="HTML" />
+                    <img src="./assets/svg/css3.svg" alt="CSS" />
+                    <img src="./assets/svg/JS.svg" alt="JS" />
+                  </div>
+                  <a
+                    href="https://crashtheroutines.github.io/music_producer"
+                    class="live-link"
+                    target="_blank"
+                    >Перейти на сайт →</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <img src="./assets/img/carluxury.jpg" alt="Project image" />
+              <div class="project-info">
+                <h3>Luxury Car</h3>
+                <p>Автосервис 2</p>
+                <div class="project-meta">
+                  <div class="tech-icons">
+                    <img src="./assets/svg/html5.svg" alt="HTML" />
+                    <img src="./assets/svg/css3.svg" alt="CSS" />
+                    <img src="./assets/svg/JS.svg" alt="JS" />
+                  </div>
+                  <a
+                    href="https://crashtheroutines.github.io/luxurycar_landing"
+                    class="live-link"
+                    target="_blank"
+                    >Перейти на сайт →</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <img src="./assets/img/rockband.jpg" alt="Project image" />
+              <div class="project-info">
+                <h3>Rock Band</h3>
+                <p>
+                 Сайт для рок-группы
+                </p>
+                <div class="project-meta">
+                  <div class="tech-icons">
+                    <img src="./assets/svg/html5.svg" alt="HTML" />
+                    <img src="./assets/svg/css3.svg" alt="CSS" />
+                    <img src="./assets/svg/JS.svg" alt="JS" />
+                  </div>
+                  <a href="https://crashtheroutines.github.io/musicband_web" class="live-link" target="_blank"
+                    >Перейти на сайт →</a
+                  >
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+
+      <section class="services" id="price">
+        <div class="service">
+          <!-- <div data-aos="flip-left"> -->
+            <h2>Верстка</h2>
+            <p>
+              Статичная верстка на HTML/CSS/JS. Готовую верстку можно натянуть
+              на CMS, либо подключить к бэкэнду. Также верстка может быть
+              выполнена на популярных CMS: Tilda и Wordpress.
+            </p>
+            <div class="price">от 5000 ₽</div>
+        
+            <a href="https://example.com" class="button">ПОДРОБНЕЕ</a>
+          </div>
+        </div>
+        <div class="service">
+          <!-- <div data-aos="fade-up"> -->
+            <h2>Веб разработка</h2>
+            <p>
+              Разработка веб-приложений и сервисов. Здесь я могу присоединится к
+              вашей команде, либо сделать бэкэнд "из коробки" на Django для
+              вашего проекта.
+            </p>
+            <div class="price">от 15 000 ₽</div>
+           
+            <a href="https://example.com" class="button">ПОДРОБНЕЕ</a>
+          </div>
+        </div>
+        <div class="service">
+          <!-- <div data-aos="flip-right"> -->
+            <h2>Автоматизация</h2>
+            <p>
+              Создание и интеграция с веб-ресурсами телеграм-ботов, скриптов и
+              парсеров на Python.
+            </p>
+            <div class="price">от 15 000 ₽</div>
+          
+            <a href="https://example.com" class="button">ПОДРОБНЕЕ</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact" id="contacts">
+        <div class="contact_container">
+          <div class="contact_image">
+            <img src="./assets/img/hero_photo.jpg" alt="hero_photo" />
+          </div>
+
+          <div class="contact_content">
+            <span class="subtitle">Контакты</span>
+
+            <div class="social_icons">
+              <a
+                href="https://www.youtube.com/@crashtheroutines"
+                target="_blank"
+                ><i class="fab fa-youtube"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/crashtheroutines"
+                target="_blank"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="./assets/svg/Instagram.svg" target="_blank"
+                ><i class="fab fa-telegram-plane"></i
+              ></a>
+              <a href="https://github.com/crashtheroutines" target="_blank"
+                ><i class="fab fa-github"></i
+              ></a>
+            </div>
+
+            <form class="contact_form">
+              <div class="form_row">
+                <input type="text" placeholder="Ваше имя" />
+                <input type="email" placeholder="Ваш EMail" />
+              </div>
+
+              <select
+                id="service_type"
+                name="service_type"
+                class="form-service"
+              >
+                <option value="customeweb">Верстка</option>
+                <option value="cmsweb">Веб-разработка</option>
+                <option value="cmsweb">Автоматизация</option>
+                <option value="cmsweb">Другое</option>
+              </select>
+
+              <textarea placeholder="Сообщение"></textarea>
+              <button type="submit">Отправить</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-column">
+          <h4>Навигация</h4>
+          <ul>
+            <li><a href="./index.html">Главная</a></li>
+            <li><a href="./portfolio.html">Портфолио</a></li>
+            <li><a href="#">Блог</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>GitHub</h4>
+          <ul>
+            <li><a href="https://github.com/CrashTheRoutines" target="_blank">Верстка</a></li>
+            <li><a href="https://github.com/CrashThePy" target="_blank">Боты, скрипты, парсеры</a></li>
+             <li><a href="https://github.com/crashthedev" target="_blank">Разработка</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Проекты</h4>
+          <ul>
+            <li>
+              <a
+                href="https://github.com/crashtheroutines/crashthedevkits"
+                target="_blank"
+                >DevKit</a
+              >
+            </li>
+            <li>
+              <a href="https://crashthedev.github.io/script2call" target="_blank"
+                >Script To Call</a
+              >
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="legal-links">
+          <a href="#">Пользовательское соглашение</a>
+          <a href="#">Политика конфеденциальности</a>
+        </div>
+        <div class="social-links">
+          <a href="https://www.youtube.com/@crashtheroutines" target="_blank"
+            ><i class="fab fa-youtube"></i
+          ></a>
+          <a href="https://www.instagram.com/crashtheroutines" target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="./assets/svg/Instagram.svg" target="_blank"
+            ><i class="fab fa-telegram-plane"></i
+          ></a>
+          <a href="https://github.com/crashtheroutines" target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+        </div>
+        <div class="copyright">
+          © 2025 Crash The Routines. Все права защищены.
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <script src="./js/scripts.js"></script>
+  </body>
 </html>
